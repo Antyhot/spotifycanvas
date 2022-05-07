@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Success!</title>
+</head>
+<body>
+
+    <h1 th:text="${username}"></h1>
+
+    <h2 th:text="@{''+${currentPlaying.item.preview_url}+''}"></h2>
+
+    <p class="font-weight-bold mb-0 text-light" th:text="${#strings.abbreviate(currentPlaying.item.album.name,20)}">Kelis</p>
+    <p class="font-small text-muted mb-0" th:text="${currentPlaying.item.name+' ('+currentPlaying.item.artists[0].name+')'}">Trick me (DJ Flam remix)</p>
+
+
+</body>
+</html>
