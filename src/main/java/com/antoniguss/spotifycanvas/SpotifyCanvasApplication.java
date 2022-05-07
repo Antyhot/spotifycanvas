@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConf
 
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class })
-public class PottifyApplication {
+public class SpotifyCanvasApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PottifyApplication.class, args);
+		SpringApplication.run(SpotifyCanvasApplication.class, args);
 	}
 
 }

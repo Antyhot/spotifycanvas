@@ -11,8 +11,8 @@
 
     <h2 th:text="@{''+${currentPlaying.item.preview_url}+''}"></h2>
 
-    <p class="font-weight-bold mb-0 text-light" th:text="${#strings.abbreviate(currentPlaying.item.album.name,20)}">Kelis</p>
-    <p class="font-small text-muted mb-0" th:text="${currentPlaying.item.name+' ('+currentPlaying.item.artists[0].name+')'}">Trick me (DJ Flam remix)</p>
+    <p class="font-weight-bold mb-0 text-light" th:text="${#strings.abbreviate(currentPlaying.item.album.name,20)}">Artist name</p>
+    <p class="font-small text-muted mb-0" th:text="${currentPlaying.item.name+' ('+currentPlaying.item.artists[0].name+')'}">Song name</p>
 
 
 </body>
